@@ -16,6 +16,12 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="cn.neday.excavator.action.generation.PubGetAction"
+                class="cn.neday.excavator.action.generation.PubGetAction" text="Get"
+                description="Get" icon="/icons/ic_pub_get.svg">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+
         <action id="cn.neday.excavator.action.generation.CleanAction"
                 class="cn.neday.excavator.action.generation.CleanAction" text="Clean"
                 description="Clean" icon="/icons/ic_clean.svg">
