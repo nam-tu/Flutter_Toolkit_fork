@@ -9,6 +9,11 @@ class RebuildAction : BaseGenerationAnAction() {
             "flutter clean",
             "dart pub get",
             "flutter pub get",
+            "cd lib",
+            "forfiles /s /m *.g.dart /c \"cmd /c del @file\"",
+            "forfiles /s /m *.freezed.dart /c \"cmd /c del @file\"",
+            "forfiles /s /m .gitkeep /c \"cmd /c del @file\"",
+            "cd ..",
             "dart run build_runner build --delete-conflicting-outputs",
             )
     override val title = "Cleaning"
