@@ -19,18 +19,20 @@
         <action id="cn.neday.excavator.action.generation.FixAction"
                 class="cn.neday.excavator.action.generation.FixAction" text="Fix"
                 description="Fix" icon="/icons/fix.svg">
-            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
         <action id="cn.neday.excavator.action.generation.PubGetAction"
                 class="cn.neday.excavator.action.generation.PubGetAction" text="Get"
                 description="Get" icon="/icons/ic_pub_get.svg">
-            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
 
         <action id="cn.neday.excavator.action.generation.CleanAction"
                 class="cn.neday.excavator.action.generation.CleanAction" text="Clean"
-                description="Clean" icon="/icons/ic_clean.svg">
-            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+                description="Clean (other project will have to run pub get again)" icon="/icons/ic_clean.svg">
+        </action>
+
+        <action id="cn.neday.excavator.action.generation.RebuildAction"
+                class="cn.neday.excavator.action.generation.RebuildAction" text="Rebuild"
+                description="Rebuild" icon="/icons/ic_rebuild.svg">
         </action>
 
         <action id="cn.neday.excavator.action.generation.BuildAction"
@@ -38,14 +40,11 @@
                 text="Build"
                 description="Code generation build"
                 icon="/icons/ic_build.svg">
-
-            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
 
         <action id="cn.neday.excavator.action.generation.WatchAction"
                 class="cn.neday.excavator.action.generation.WatchAction" text="Watch"
                 description="Invoked 'flutter pub run build_runner watch --delete-conflicting-outputs'" icon="/icons/ic_watch.svg">
-            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>
 </idea-plugin>

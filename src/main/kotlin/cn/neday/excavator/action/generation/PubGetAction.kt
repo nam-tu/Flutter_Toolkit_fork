@@ -4,7 +4,7 @@ import cn.neday.excavator.action.BaseGenerationAnAction
 
 class PubGetAction : BaseGenerationAnAction() {
     override val commandList = listOf(
-        "flutter pub get"
+            "flutter pub get"
     )
     override val title = "Flutter Pub get"
     override val successMessage = "Complete!\nFlutter Pub get successfully."
